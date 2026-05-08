@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Easy Chinese Recipes for Beginners | No Wok Needed</title>
+  <meta name="description" content="Discover easy Chinese recipes for beginners with supermarket ingredients, no special tools, and step-by-step instructions for quick Chinese dinners." />
+  <meta name="keywords" content="easy chinese recipe, beginner chinese cooking, quick chinese dinner, no wok chinese food, supermarket ingredients chinese recipe" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Easy Chinese Recipes for Beginners | No Wok Needed" />
+  <meta property="og:description" content="Simple Chinese home cooking recipes with supermarket ingredients and no special tools needed." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-username.github.io/your-repo-name/" />
+  <meta property="og:image" content="https://your-username.github.io/your-repo-name/og-image.jpg" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Easy Chinese Recipes for Beginners" />
+  <meta name="twitter:description" content="Simple Chinese home cooking recipes with supermarket ingredients." />
+  
+  <link rel="canonical" href="https://your-username.github.io/your-repo-name/" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Easy Chinese Recipes</a>
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="#random" id="randomBtnTop">Random Recipe</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="index.html" class="active">Home</a>
+      <a href="categories.html">Categories</a>
+      <a href="#random" id="randomBtnMobile">Random Recipe</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Beginner Chinese Cooking • Supermarket Ingredients • No Wok Chinese Food</p>
+        <h1>Easy Chinese Recipes for Busy Weeknights</h1>
+        <p class="hero-text">
+          Discover quick Chinese dinner ideas that are simple, affordable, and beginner-friendly.
+          Every recipe uses easy-to-find ingredients and clear step-by-step instructions.
+        </p>
+        <div class="hero-actions">
+          <a href="categories.html" class="btn">Browse Recipes</a>
+          <a href="#random" class="btn btn-outline" id="randomBtnHero">Try Random Recipe</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Popular Recipes</h2>
+          <a href="categories.html">View all</a>
+        </div>
+        <div class="grid" id="popularGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Latest Recipes</h2>
+          <a href="categories.html">View all</a>
+        </div>
+        <div class="grid" id="latestGrid"></div>
+      </div>
+    </section>
+
+    <section class="section random-section" id="random">
+      <div class="container">
+        <div class="random-box">
+          <div>
+            <p class="eyebrow">Fun Feature</p>
+            <h2>Random Recipe Picker</h2>
+            <p>
+              Click the button and get a random easy Chinese recipe for tonight's dinner.
+              Great for when you want something simple and do not want to decide.
+            </p>
+          </div>
+          <button class="btn" id="randomBtn">Start Random Pick</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div class="footer-col">
+        <h3>Easy Chinese Recipes</h3>
+        <p>Simple Chinese home cooking for beginners with supermarket ingredients and no special tools needed.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html">All Recipes</a></li>
+          <li><a href="#random">Random Recipe</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="categories.html?cat=home-style">Home-style</a></li>
+          <li><a href="categories.html?cat=noodles">Noodles</a></li>
+          <li><a href="categories.html?cat=quick-meals">Quick Meals</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Easy Chinese Recipes. Built for home cooks worldwide.</p>
+    </div>
+  </footer>
+
+  <div class="modal" id="randomModal" aria-hidden="true">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <p class="eyebrow">Random Pick</p>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <div class="modal-meta" id="modalMeta"></div>
+      <a id="modalLink" class="btn" href="#">Open Recipe</a>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chinese Recipe Categories | Easy Chinese Recipes</title>
+  <meta name="description" content="Browse easy Chinese recipe categories including home-style dishes, noodles, soups, air fryer recipes, quick meals, desserts, and cold dishes." />
+  <meta name="keywords" content="easy chinese recipe, beginner chinese cooking, quick chinese dinner, chinese recipe categories" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Chinese Recipe Categories | Easy Chinese Recipes" />
+  <meta property="og:description" content="Browse easy Chinese recipe categories for beginners." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-username.github.io/your-repo-name/categories.html" />
+  
+  <link rel="canonical" href="https://your-username.github.io/your-repo-name/categories.html" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Easy Chinese Recipes</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="categories.html" class="active">Categories</a>
+        <a href="#random" id="randomBtnTop">Random Recipe</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="index.html">Home</a>
+      <a href="categories.html" class="active">Categories</a>
+      <a href="#random" id="randomBtnMobile">Random Recipe</a>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="section">
+      <div class="container">
+        <div class="page-head">
+          <div>
+            <h1 id="categoryTitle">All Recipes</h1>
+            <p id="categoryDesc">Choose a category and find an easy Chinese recipe for beginners.</p>
+          </div>
+        </div>
+
+        <div class="chips" id="categoryChips"></div>
+        <div class="grid" id="categoryGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div class="footer-col">
+        <h3>Easy Chinese Recipes</h3>
+        <p>Simple Chinese home cooking for beginners.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html">All Recipes</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Easy Chinese Recipes.</p>
+    </div>
+  </footer>
+
+  <div class="modal" id="randomModal" aria-hidden="true">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <p class="eyebrow">Random Pick</p>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <div class="modal-meta" id="modalMeta"></div>
+      <a id="modalLink" class="btn" href="#">Open Recipe</a>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
