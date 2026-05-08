@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zhang1-cpu.github.io/chinese-home-cooking/sitemap.xml
